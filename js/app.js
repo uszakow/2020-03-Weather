@@ -51,7 +51,7 @@ formForAddCity.addEventListener('submit', async (event) => {
         const cityRequest = document.querySelector('#search').value;
 
         //Otrzymać koordynaty miejscowości 
-        let coordinatesFromRequest = await fetch(`https://api.opencagedata.com/geocode/v1/json?key=8908a6c398994a29866bfb2eb127742d&q=${cityRequest}&language=pl`);
+        let coordinatesFromRequest = await fetch(`https://api.opencagedata.com/geocode/v1/json?key=03ae9a5d68014df6b4e84abbbc2d614a&q=${cityRequest}&language=pl`);
         coordinatesFromRequest = await coordinatesFromRequest.json();
 
         latitude = coordinatesFromRequest.results[0].geometry.lat;
